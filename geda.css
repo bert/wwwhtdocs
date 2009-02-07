@@ -1,0 +1,264 @@
+	
+body {
+    background-color: #f8f8f8;
+    color: #000000;
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+
+#nav {
+   width: 100%;
+}
+
+#navavoid {
+    width: 1px;
+    height: 5px;
+}
+
+#nav ul {
+    position: relative;
+    right: 5px;
+    width: 100%;
+    font-size: 100%;
+    z-index: 10;
+    padding: 0px;
+    margin: 0px;
+    text-align: right;
+}
+
+#navundertext {
+    position: relative;
+    top: -30px;
+    height: 50px;
+    width: 100%;
+}
+
+#navlogo {
+    position: absolute;
+    width: 266px;
+    height: 73px;
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+    z-index: 1;
+}
+
+#navrule {
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    top: 35px;
+    padding: 0px;
+    margin: 0px;
+    border-top: 2px solid #0000FF;
+    z-index: 0;
+}
+
+
+#nav h1 {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    z-index: 2;
+    margin: 0px;
+    padding: 0px;
+    font-size: 18pt;
+    text-align: left;
+}
+
+#nav h2 {
+    position: absolute;
+    top: 7px;
+    left: 84px;
+    z-index: 2;
+    margin: 0px;
+    padding: 0px;
+    font-size: 70%;
+    text-align: left;
+    color: #A0A0A0;
+}
+
+#nav h3 {
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    right: 5px;
+    font-size: 100%;
+    z-index: 10;
+    padding: 0px;
+    margin: 0px;
+    text-align: right;
+}
+
+#nav img {
+    border: none;
+}
+
+#nav li {
+    display: inline;
+    font-family: sans-serif;
+    margin-right: 0em;
+    margin-left: 0em;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    //font-size: 12px;
+    font-size: 100%;
+}
+
+#nav a {
+    text-decoration: none;
+    font-weight: normal;
+    color: #0000BB; 
+}
+
+#nav a:visited {
+    color: #551a8b;
+}
+
+#nav a:active {
+    color: #FF0000;
+}
+
+#nav a:hover {
+    color: #FF0000;
+}
+
+
+#main {
+    width: 90%;
+    margin: 1em 2em 1em 2em;
+    font-family: sans-serif;
+}
+
+#main a {
+    text-decoration: none;
+    font-weight: normal;
+    color: #0000BB; 
+}
+
+#main a:visited {
+    color: #551a8b;
+}
+
+#main a:active {
+    color: #FF0000;
+}
+
+#main a:hover {
+    color: #FF0000;
+}
+
+#main h1 {
+    font-size: 200%;
+    font-weight: normal;
+    color: #707070;
+    padding: 0px;
+}
+
+#main h1 b {
+    color: #000000;
+}
+
+#main h2 {
+    font-size: 110%;
+    font-weight: bold;
+    color: #000000;
+}
+
+#main h3 {
+    font-size: 90%;
+    font-weight: bold;
+    color: #000000;
+}
+
+#main a {
+    color: #0000BB;
+}
+
+/* 
+#main ul {
+/*    width: 100%; */
+    font-size: 100%;
+    padding: 0px;
+    margin: auto auto 2em auto;
+    #text-align: justify;
+}
+*/
+
+#faq {
+    width: 90%;
+    margin: 1em 2em 1em 2em;
+}
+
+#faq a {
+    text-decoration: none;
+    font-weight: normal;
+    color: #0000BB; 
+}
+
+#faq a:visited {
+    color: #551a8b;
+}
+
+#faq a:active {
+    color: #FF0000;
+}
+
+#faq a:hover {
+    color: #FF0000;
+}
+
+#faq h1 {
+    font-size: 200%;
+    font-weight: normal;
+    color: #707070;
+    padding: 0px;
+    margin: 0em auto 0em auto;
+}
+
+#faq h1 b {
+    color: #000000;
+}
+
+#faq h2 {
+    font-size: 110%;
+    font-weight: bold;
+    color: #000000;
+}
+
+#faq h3 {
+    font-size: 90%;
+    font-weight: bold;
+    color: #000000;
+}
+
+#faq a {
+    color: #0000BB;
+}
+
+#footer {
+    clear: both;
+    width: 100%;
+    margin: auto auto auto auto;
+    border-top: 2px solid #0000FF;
+}
+
+#footer h5 {
+    text-align: left;
+    display: inline;
+    font-size: 80%;
+    padding: 5px;
+    font-weight: normal;
+}
+
+#footer h4 {
+    text-align: left;
+    font-size: 100%;
+    padding: 0px 10px;
+    font-weight: normal;
+}
+

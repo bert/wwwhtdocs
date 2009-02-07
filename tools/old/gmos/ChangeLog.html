@@ -1,0 +1,124 @@
+<HTML>
+<HEAD> <TITLE> ChangeLog </TITLE> </HEAD>
+<BODY BGCOLOR="#000000" TEXT="#FFFFFF" LINK="#00FF00" VLINK="#00DDDD">
+
+<IMG SRC="../../graphics/title.gif" alt="gEDA title" WIDTH=540 HEIGHT=45><br>
+<IMG SRC="../../graphics/blueline.gif" alt="line"><br>
+<br>
+<p>
+
+<pre>
+
+ChangeLog for GMOS
+
+Most recent changes are at the top of this file
+
+0.1.0
+-----
+	- changed forgoten 'nan's to 'N_A' in level1l,level2 and ekv
+	
+0.0.9
+-----
+
+	- updated configure.in to check for lex library
+	
+	- parsing of model files now done using lex (lex.yy.c)
+
+	- quit using NaN as special value - now use N_A=9e99
+	
+0.0.8
+-----
+30/11/98 - release of gmos-0.0.8
+
+	- improved bissection loop
+	
+	- changed code indentation (looks better?)
+
+	- changed nmos/pmos switch in level1&2 and ekv
+	
+0.0.7
+-----
+13/11/98 - release of gmos-0.0.7
+
+	- 'G' in gmos now means 'GTK'
+	
+	- added checking in parsing of level 1 and 2
+
+	- aim to have spice-compatibility regarding units in model descriptions
+	
+0.0.6
+-----
+25/10/98 - release of gmos-0.0.6
+	
+	- added tying of source/bulk via 'options' menu
+	
+        - better parsing 
+     
+        - level 2 simplified, code cleanup - bugfixes
+	
+        - added mobility reduction and velocity saturation in ekv
+     
+        - few bugfixes in level1
+     
+        - careful: replaced all 'VTO's by 'VT0' (VTzero)
+
+0.0.5
+-----
+21/10/98 - release of gmos-0.0.5
+
+	- added 'Makefile.old' in Makefile.am 
+	 
+	- added 'cmod.models' example file to distribution
+	
+	- started model file parser level 1 and 2
+	
+	- added file selection dialog (routines borrowed from gwave,gEdit and
+	  the GTK tutorial)
+	
+	- put all sources in src/
+0.0.4
+-----	
+1/10/98	- release of gmos-0.0.4
+
+	- code cleanup
+	
+	- substituted one single function to 'calcul_xx' functions
+	  in loop.C
+	
+30/9/98	- translated most comments from french
+	
+	- removed 'static' function declaration (useless)
+	
+	- removed 'mos_(level)_callback' functions
+	  now all is done in 'set_level_callback'
+
+27/9/98 - work done on EVK and level2 models
+	
+	- corrected 'license' at top of .c and .h files
+	  (was LGPL instead of GPL, my mistake)
+0.0.3
+-----
+18/9/98 - release of gmos-0.0.3
+	
+	- added draft of ekv model
+	
+	- a few bugfixes in loop.c
+	
+	- better configure script
+	
+	- many changes
+	
+0.0.2
+-----
+
+6/9/98	First release to the amazed world
+	(Could be the last release, too!!!)
+</pre>
+
+<H3>
+<A HREF="./index.html">Up one level</A>
+</H3>
+
+</BODY>
+</HTML>
+

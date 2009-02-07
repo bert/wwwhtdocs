@@ -1,0 +1,23 @@
+/* XPM */
+static char * third_xpm[] = {
+"16 16 4 1",
+" 	c white",
+".	c darkblue",
+"X	c darkred",
+"o	c darkgreen",
+"                ",
+"     .. ..   .  ",
+"     .  . . . . ",
+" XXX .. . . ... ",
+" X X .  . . . . ",
+" XXX .. ..  . . ",
+"   X            ",
+" XXX            ",
+"       ooooo    ",
+"     ooo    o   ",
+"       o     o  ",
+"       o     ooo",
+"       o     o  ",
+"     ooo    o   ",
+"       ooooo    ",
+"                "};

@@ -1,0 +1,202 @@
+<HTML>
+
+<HEAD>
+<TITLE>gEDA/gaf's gschem </TITLE>
+<STYLE TYPE="text/css" MEDIA="all" TITLE="Default">
+@IMPORT URL(../../geda.css);
+</STYLE>
+
+<LINK rel="icon" href="../../favicon.ico" type="image/x-icon"> 
+<LINK rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+
+</HEAD>
+
+<BODY>
+
+<div id="nav">
+<div id="navavoid"></div>
+
+<ul>
+<li> <A HREF="../../index.html">Home</A> </li> <li> &middot; </li>
+<li> <A HREF="../../news/index.html">News</A> </li> <li> &middot; </li>
+<li> <A HREF="../../screenshots/index.html">Screenshots</A> </li> <li>&middot; </li>
+<li> <A HREF="../index.html"></A>Tools </li> <li> &middot; </li>
+<li> <A HREF="../../license.html">License</A> </li> <li> &middot; </li>
+<li> <A HREF="../../download.html">Download</A> <li> </li> 
+<br>
+<li> <A HREF="http://geda.seul.org/wiki">Documentation</A> </li> <li> &middot; </li>
+<li> <A HREF="../../mailinglists.html">Mailing Lists</A> </li> <li> &middot;
+<li> <A HREF="../../developer.html">Developer</A> </li> <li> &middot; </li>
+<li> <A HREF="../../search.html">Search</A> </li> <li> &middot; </li>
+<li> <A HREF="../../links.html">Links</A> </li>
+</ul>
+
+<div id="navundertext">
+<div id="navlogo">
+
+<A HREF="../../index.html">
+<img src="../../graphics/navlogo.png" height="73" width="266" alt="gEDA logo"/>
+</A>
+
+</div>
+
+<div id="navrule"></div>
+<h3>
+<A HREF="../index.html">Tools</A> &rarr; gschem
+</h3>
+</div>
+
+</div>
+
+<!--[if lt IE 7.]>
+<script defer type="text/javascript" src="../../pngfix.js"></script>
+<![endif]-->
+
+<div id="main">
+
+<CENTER>
+<H2>
+gschem<br>
+gEDA/gaf's Schematic Capture
+</H2>
+</CENTER>
+
+<H3>
+<A HREF="#whatis">What is gschem?</A><BR>
+<A HREF="#look">What does it look like?</A><BR>
+<A HREF="#author">Who is the author of gschem?</A><BR>
+<A HREF="#schematic">What is "schematic capture"?</A><BR>
+<A HREF="#gschem">So what can gschem do?</A><BR>
+<A HREF="#missing">What features are missing from gschem?</A><BR>
+<A HREF="#download">Where can I download it?</A><BR>
+</H3>
+<HR>
+
+
+
+<H4>
+<A NAME="whatis"></A>
+What is gschem?
+</H4>
+gschem is the schematic capture program/tool which is part of gEDA.  It's
+sole purpose is to facilitate the graphical input of components/circuits.
+<br>
+<p>
+
+<H4>
+<A NAME="look"></A>
+What does it look like?
+</H4>
+Here is a page of current <A HREF="../../screenshots/index.html">screenshots</A>.
+<br>
+<p>
+
+
+<H4>
+<A NAME="author"></A>
+Who is the author of gschem?
+</H4>
+Gschem is a community effort with several dozen contributors participating in the gEDA Project.
+The project was originated by Ales Hvezda, and he wrote the original version of gschem.
+<br>
+<p>
+
+<H4>
+<A NAME="schematic"></A>
+What is "schematic capture"?
+</H4>
+
+Schematic capture is a fancy name for the ability to draw and layout circuits 
+using a computer.  Standard symbols are used to represent the 
+various gates and components which are interconnected by nets (wires).  
+Most vector drawing programs can be used for schematic capture but they usually 
+lack one (or more) of the following characteristics:
+<p>
+<UL>
+<LI> The awareness of the electrical properties of components, nets, and pins.</LI> 
+<LI> Hierarchical design (having components represent some abstracted functionality).</LI>
+<LI> The ability to associate attributes with nets and components.</LI>
+<LI> Generate netlists from the schematic.</LI>
+</UL>
+<p>
+These are all critical features 
+which are shared by all schematic capture programs.  The schematic capture 
+program which is part of gEDA is called "gschem"; it provides support for all above characteristics.  <p>
+
+
+<H4>
+<A NAME="gschem"></A>
+So what can gschem do?
+</H4>
+
+Current features:<p>
+
+<UL>
+<LI> Draw graphic primitives such lines, boxes, text, circles, and arcs</LI>
+<LI> Take all of the above primitives and group them into a component or part</LI>
+<LI> Draw electrical elements such as nets, pins, and buses</LI>
+<LI> The same interface to draw schematics is also used to draw components</LI>
+<LI> A component library which has the basic schematic symbols</LI>
+<LI> Components and primitives can be placed, copied, moved, rotated, mirrored, and deleted</LI>
+<LI> Components can be embedded in schematic sheets (no .sym files required to
+view the schematic) </LI>
+<LI> Components can be included in symbol files to encourage symbol reuse.</LI>
+<LI> Nets can be drawn to interconnect components and other nets.</LI>
+<LI> Visual indicators show if a net is dangling or connected to another net
+(or pin) </LI>
+<LI> Attributes (text which takes the form: name=value) can be attached to 
+any object</LI>
+<LI> Attributes can be either visible or invisible</LI>
+<LI> There are several functions to search for, change the visibility of, and autonumber attributes</LI>
+<LI> Any object can be selected either by a single click or by a selection box</LI> 
+<LI> Multiple objects can be selected and operations can be easily performed on this group</LI>
+<LI> The display can be zoomed, panned, resized, and redrawn at the touch of a button </LI>
+<LI> Postscript printing of the schematic is supported</LI>
+<LI> PNG image writing of the schematic is supported</LI>
+<LI> All colors and certain object characteristics can be changed via a rc file</LI>
+<LI> Ability to open multiple windows and work on multiple schematics easily</LI>
+<LI> Support for multiple buffers/pages/schematic open at the same time</LI>
+<LI> Support of a stroke like user interface</LI>
+<LI> Scripting.  Uses guile (scheme like language) as its scripting language</LI>
+<LI> Hierarchical support for schematics and symbols</LI>
+<LI> Automatic drawing of bus rippers when connecting nets to buses</LI>
+<LI> And more... </LI>
+</UL>
+<p>
+
+gschem is pronounced like "gee-shhhem" (like the German word Schule) or 
+"gee-skkhem" (like the English word school).
+<p>
+
+<H4>
+<A NAME="missing"></A>
+What features are missing from gschem?
+</H4>
+
+	Here are the features which are currently missing:<p>
+
+	<UL>
+	<LI> Automatic net routing around components </LI> 
+
+	<LI> DRC </LI>
+	</UL>
+	<p>
+
+This list is rather short; gschem has matured to the point where many people are able to use it for challenging designs.
+<p>
+
+
+<H4>
+<A NAME="download"></A>
+Where can I download it?
+</H4>
+
+<A HREF="../../download.html">gEDA's download page</A><br>
+</div>
+
+<div id="footer">
+<br>
+</div>
+
+</BODY>
+</HTML>

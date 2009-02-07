@@ -1,0 +1,240 @@
+<html><head><title>gEDA Project Downloads</title>
+
+<style type="text/css" media="all" title="Default">
+@IMPORT URL(./geda.css);
+</style>
+
+<link rel="icon" href="./favicon.ico" type="image/x-icon"> 
+<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon"></head>
+
+<body>
+
+<div id="nav">
+<div id="navavoid"></div>
+
+<ul>
+<li> <A HREF="./index.html">Home</A> </li> <li> &middot; </li>
+<li> <A HREF="./news/index.html">News</A> </li> <li> &middot; </li>
+<li> <A HREF="./screenshots.html">Screenshots</A> </li> <li> &middot; </li>
+<li> <A HREF="./tools/index.html">Tools</A> </li> <li> &middot; </li>
+<li> <A HREF="./license.html">License</A> </li> <li> &middot; </li>
+<li> <A HREF="./download.html"></A>Download </li> 
+<li> <br> </li>
+<li> <A HREF="http://geda.seul.org/wiki">Documentation</A> </li> <li> &middot; </li>
+<li> <A HREF="./mailinglists.html">Mailing Lists</A> </li> <li> &middot; </li>
+<li> <A HREF="./developer.html">Developer</A> </li> <li> &middot; </li>
+<li> <A HREF="./search.html">Search</A> </li> <li> &middot; </li>
+<li> <A HREF="./links.html">Links</A> </li>
+</ul>
+<div id="navundertext">
+<div id="navlogo">
+
+<A HREF="http://geda.seul.org/index.html">
+<img src="./graphics//navlogo.png" height="73" width="266" alt="gEDA logo"/>
+</A>
+
+</div>
+
+<div id="navrule"></div>
+<h3>
+Download 
+</h3>
+</div>
+
+</div>
+
+<!--[if lt IE 7.]>
+<script defer type="text/javascript" src="pngfix.js"></script>
+<![endif]-->
+
+<div id="main">
+
+
+<center>
+<a name="installing"></a>
+<h2> Downloading and installing gEDA</h2>
+</center>
+
+<p>
+Several different methods to install gEDA exist.  Select your
+installation method depending upon your Linux distribution and your
+level of expertise.  If one install method doesn't work for you, please
+try a different one.  Consult the <a href="http://geda.seul.org/wiki/">
+gEDA wiki</a> for further download/install tips.  Also, if this is
+your first time installing gEDA, please read
+the gEDA <a href="#words">words to the wise</a>.
+</p>
+
+<center>
+<a name="binaries"></a>
+<br>
+<h3> Distribution Packages / Binaries</h3>
+</center>
+
+<p>
+Installing gEDA using a pre-built package is the most painless method
+to install the software.  Automated package installers like "yum" or
+"apt-get" handle all dependencies for you.  Newbies should use these
+methods to install gEDA on their systems.  Alternately, good old "rpm"
+will also work, although you may need to install dependencies first.
+</p>
+
+<table cellpadding="2" cellspacing="0" style="border: 1px solid rgb(150, 150, 150); text-align: left;" 
+width="100%" border=1>
+
+<tbody><tr>
+  <th style="background-color: rgb(245, 245, 245);">Linux Distro</th>
+  <th style="background-color: rgb(245, 245, 245);">Installation method</th>
+  <th style="background-color: rgb(245, 245, 245);">Install files</th>
+  <th style="background-color: rgb(245, 245, 245);">Creator/maintainer</th>
+  <th style="background-color: rgb(245, 245, 245);">Comment</th>
+</tr>
+
+
+<tr>
+<td valign="top">Fedora Core 5<br>Fedora Core 6</td>
+<td valign="top">yum install geda-*<br>
+                 yum install pcb-*</td>
+<td valign="top"><a href="http://fedoraproject.org/wiki/Extras?highlight=%28extras%29">RPMs</a></td>
+<td valign="top">Chitlesh Goorah/Fedora Project</td>
+<td valign="top">Major parts of gEDA are now part of the 
+<a href="http://fedoraproject.org/wiki/Extras?highlight=%28CategoryExtras%29">Fedora Extras</a>
+ project!</td>
+</tr>
+
+<tr>
+<td valign="top">Fedora Core 5<br>Fedora Core 6</td>
+<td valign="top" width="200">rpm --install geda-*<br>
+                 rpm --install libgeda-*<br>
+                 rpm --install pcb-*</td>
+<td valign="top"><a href="http://www.sp5pbe.waw.pl/~sp5smk/geda.html">RPMs</a></td>
+<td valign="top">Wojciech Kazubski</td>
+<td valign="top">When you install FC5, select "software development" packages.  
+Beyond that you might also need to install the following RPMs:
+guile-devel, libstroke.</td>
+</tr>
+
+<tr>
+<td valign="top">Fedora Core 4 and previous FC and RedHat systems</td>
+<td valign="top">rpm --install geda-*<br>
+                 rpm --install libgeda-*<br>
+                 rpm --install pcb-*</td>
+<td valign="top"><a href="http://www.sp5pbe.waw.pl/~sp5smk/geda-old.html">RPMs</a></td>
+<td valign="top">Wojciech Kazubski</td>
+<td valign="top">When you install FC5, select "software development" packages.  
+Beyond that you might also need to install the following RPMs:
+guile-devel, libstroke.</td>
+</tr>
+
+
+<tr>
+<td valign="top">SuSE</td>
+<td valign="top">yast</td>
+<td valign="top"><a href="http://download.opensuse.org/repositories/science/">RPMs</a></td>
+<td valign="top">Werner Hoch</td>
+<td valign="top"> &nbsp;</td>
+</tr>
+
+
+<tr>
+<td valign="top">Debian</td>
+<td valign="top">apt-get install geda</td>
+<td valign="top"><a href="http://packages.debian.org/search?keywords=geda">.deb files</a></td>
+<td valign="top">Hamish Moffatt</td>
+<td valign="top"> Download .debs appropriate for
+the maturity level of your distro (stable, testing, etc.)</td>
+</tr>
+
+
+<tr>
+<td valign="top">Mac OSX</td>
+<td valign="top">&nbsp;</td>
+<td valign="top"><a href="http://www.ghz.cc/charles/fink/">fink packages</a></td>
+<td valign="top">Charles Lepple</td>
+<td valign="top">Instructions provided in <a href="http://www.ghz.cc/charles/fink/">link</a></td>
+</tr>
+
+
+</tbody></table>
+
+<center>
+<a name="suite"></a>
+<br>
+<h3> gEDA Binary Suite</h3>
+</center>
+
+<p>
+For those people who cannot find binaries of the gEDA Suite programs
+via your distribution, you can try to install the gEDA Binary Suite.
+The gEDA Binary Suite is only for x86 GNU/Linux and contains everything
+you need to run the gEDA Suite programs on any GNU/Linux distribution 
+(released after October 2001).
+</p>
+
+<p>
+<UL>
+<LI> The current version of the gEDA Binary Suite is 0.0.2</LI>
+<LI> Be sure to read the <A HREF="http://geda.seul.org/dist/suite/v0.0.2/README">README</A> for installation information.</LI>
+<LI> The gEDA Binary Suite can be download via: <A HREF="http://geda.seul.org/dist/suite/v0.0.2/gedasuite-linux-x86-0.0.2.tar.bz2">HTTP</A> <A HREF="ftp://ftp.geda.seul.org/pub/geda/dist/suite/v0.0.2/gedasuite-linux-x86-0.0.2.tar.bz2">FTP</A></LI>
+<LI> Be sure to verify your download tar.bz2 file against the: <A HREF="http://geda.seul.org/dist/suite/v0.0.2/gedasuite-linux-x86-0.0.2.md5sum">md5sum</A></LI>
+</UL>
+</p>
+
+
+<center>
+<a name="sources"></a>
+<br>
+<h3> Sources </h3>
+</center>
+<p>
+gEDA is 
+<a href="http://www.gnu.org/philosophy/free-sw.html">free</a> / <a href="http://www.opensource.org/docs/definition_plain.php">open-source</a> software.  
+Developers interested in getting all sources can either use the CDROM
+(above), or they can download the individual components from the 
+<a href="./sources.html">sources download page</a>.
+</p>
+
+<center>
+<a name="words"></a>
+<br>
+<h3>Words to the Wise</h3>
+</center>
+
+<p>
+<ul>
+<li>gEDA is a set of <strong>GNU/Linux or Unix</strong>-native programs.
+There is <b>no supported Windows version</b>.  However, since most programs are based
+on the cross-platform GTK+ libraries, it is theoretically possible to
+build a Windows version.  Therefore, if you want a Windows version,
+please feel free to grab the sources and try to build one yourself.</li>
+<br>
+
+<li>The gEDA programs use the GTK+ GUI toolkit.  If you are running KDE, you
+should have no problem building and installing them <strong> as long as
+the GTK+ libraries and headers are installed on your system.</strong></li>
+<br>
+
+<li>gEDA/gaf, as well as the gEDA-allied programs have certain
+dependencies.  These are libraries and other programs which must be present on
+your system to build and run gEDA successfully.  When trying to
+install gEDA, you may find that you need to install other, seemingly
+unrelated programs first.  This is part of the <strong>normal</strong>
+process of installing GNU/Linux or Unix software.  Note that the
+installation methods presented above provide you with different
+approaches to handling the dependency issue.  (Also, gEDA/gaf has a
+very light dependency footprint.  However, other gEDA-allied programs
+may have more dependencies.)  If you find you are missing dependencies
+during the installation process <strong>don't despair!</strong>  
+Overcoming any dependency issue is a simple matter of installing the
+required program or library.
+</ul>
+</p>
+
+</div>
+<br>
+
+<div id="footer">
+<br>
+</div>
+
+</body></html>

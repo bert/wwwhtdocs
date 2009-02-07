@@ -1,0 +1,136 @@
+<HTML>
+
+<HEAD>
+<TITLE>gEDA/gaf's gattrib</TITLE>
+<STYLE TYPE="text/css" MEDIA="all" TITLE="Default">
+@IMPORT URL(../../geda.css);
+</STYLE>
+
+<LINK rel="icon" href="../../favicon.ico" type="image/x-icon"> 
+<LINK rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+
+</HEAD>
+
+<BODY>
+
+<div id="nav">
+<div id="navavoid"></div>
+
+<ul>
+<li> <A HREF="../../index.html">Home</A> </li> <li> &middot; </li>
+<li> <A HREF="../../news/index.html">News</A> </li> <li> &middot; </li>
+<li> <A HREF="../../screenshots/index.html">Screenshots</A> </li> <li>&middot; </li>
+<li> <A HREF="../index.html"></A>Tools </li> <li> &middot; </li>
+<li> <A HREF="../../license.html">License</A> </li> <li> &middot; </li>
+<li> <A HREF="../../download.html">Download</A> <li> </li> 
+<br>
+<li> <A HREF="http://geda.seul.org/wiki">Documentation</A> </li> <li> &middot; </li>
+<li> <A HREF="../../mailinglists.html">Mailing Lists</A> </li> <li> &middot;
+<li> <A HREF="../../developer.html">Developer</A> </li> <li> &middot; </li>
+<li> <A HREF="../../search.html">Search</A> </li> <li> &middot; </li>
+<li> <A HREF="../../links.html">Links</A> </li>
+</ul>
+
+<div id="navundertext">
+<div id="navlogo">
+
+<A HREF="../../index.html">
+<img src="../../graphics/navlogo.png" height="73" width="266" alt="gEDA logo"/>
+</A>
+
+</div>
+
+<div id="navrule"></div>
+<h3>
+<A HREF="../index.html">Tools</A> &rarr; gattrib
+</h3>
+</div>
+
+</div>
+
+<!--[if lt IE 7.]>
+<script defer type="text/javascript" src="../../pngfix.js"></script>
+<![endif]-->
+
+<div id="main">
+
+<CENTER>
+<H2>
+gattrib<br>
+Attribute Editor
+</H2>
+</CENTER>
+
+<H3>
+<A HREF="#whatis">What is gattrib?</A><BR>
+<A HREF="#look">What does it look like?</A><BR>
+<A HREF="#author">Who is the author of gattrib?</A><BR>
+<A HREF="#download">Where can I download it?</A><BR>
+</H3>
+<HR>
+
+
+
+<H4>
+<A NAME="whatis"></A>
+What is gattrib?
+</H4>
+Gattrib is gEDA's attribute editor.  It reads a set of gschem .sch
+files (schematic files), and creates a spreadsheet showing all
+components in rows, with the associated component attributes listed in
+the columns.  It allows the user to add, modify, or delete component
+attributes outside of gschem, and then save the .sch files back
+out.  When it is completed, it will allow the user to edit attributes
+attached to components, nets, and pins.  (Currently, only component
+attribute editing is implemented; pin attributes are displayed only,
+and net attributes are TBD.) 
+<p>
+
+Gattrib is useful in situations where you need to view, add, modify,
+or delete a number of attributes all at once.  It saves you the pain
+of clicking on each component and repeatedly using gschem's attribute 
+editor to modify component attributes.  For example, if you create a
+large design with generic components, and then later want to attach
+"footprint" attributes to your components, it is a real hassle to do
+so using gschem.  In this situation, you can run gattrib on your
+design files to attach the "footprint" attributes all at once using an
+easy-to-use spreadsheet. 
+<br> <p>
+
+<H4>
+<A NAME="look"></A>
+What does it look like?
+</H4>
+
+Here is a <A HREF="./gattrib.png">screenshot</A>
+<br>
+<p>
+
+
+<H4>
+<A NAME="author"></A>
+Who is the author of gattrib?
+</H4>
+
+Gattrib is a community effort with several dozen contributors participating in the gEDA Project.
+Gattrib itself was originally written by Stuart Brorson.
+
+<br>
+<p>
+
+
+<H4>
+<A NAME="download"></A>
+Where can I download it?
+</H4>
+
+<A HREF="../../download.html">gEDA's download page</A><br>
+</UL>
+</div>
+
+<div id="footer">
+<br>
+</div>
+
+</BODY>
+</HTML>

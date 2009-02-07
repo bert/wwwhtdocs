@@ -1,0 +1,17 @@
+# robots.txt for *.seul.org
+# questions/comments to seul@seul.org
+
+User-agent: *
+Disallow: /wiki
+
+User-agent: *
+Disallow: /cgi-bin
+
+User-agent: Slurp
+Disallow: /cgi-bin
+
+User-agent: Scooter
+Disallow: /cgi-bin
+
+User-agent: GoogleBot
+Disallow: /cgi-bin

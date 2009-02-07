@@ -1,0 +1,156 @@
+<HTML>
+
+<HEAD>
+<TITLE>gEDA/gaf's Utilities </TITLE>
+<STYLE TYPE="text/css" MEDIA="all" TITLE="Default">
+@IMPORT URL(../../geda.css);
+</STYLE>
+
+<LINK rel="icon" href="../../favicon.ico" type="image/x-icon"> 
+<LINK rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+
+</HEAD>
+
+<BODY>
+
+<div id="nav">
+<div id="navavoid"></div>
+
+<ul>
+<li> <A HREF="../../index.html">Home</A> </li> <li> &middot; </li>
+<li> <A HREF="../../news/index.html">News</A> </li> <li> &middot; </li>
+<li> <A HREF="../../screenshots/index.html">Screenshots</A> </li> <li>&middot; </li>
+<li> <A HREF="../index.html"></A>Tools </li> <li> &middot; </li>
+<li> <A HREF="../../license.html">License</A> </li> <li> &middot; </li>
+<li> <A HREF="../../download.html">Download</A> <li> </li> 
+<br>
+<li> <A HREF="http://geda.seul.org/wiki">Documentation</A> </li> <li> &middot; </li>
+<li> <A HREF="../../mailinglists.html">Mailing Lists</A> </li> <li> &middot;
+<li> <A HREF="../../developer.html">Developer</A> </li> <li> &middot; </li>
+<li> <A HREF="../../search.html">Search</A> </li> <li> &middot; </li>
+<li> <A HREF="../../links.html">Links</A> </li>
+</ul>
+
+<div id="navundertext">
+<div id="navlogo">
+
+<A HREF="../../index.html">
+<img src="../../graphics/navlogo.png" height="73" width="266" alt="gEDA logo"/>
+</A>
+
+</div>
+
+<div id="navrule"></div>
+<h3>
+<A HREF="../index.html">Tools</A> &rarr; Utilities
+</h3>
+</div>
+
+</div>
+
+<!--[if lt IE 7.]>
+<script defer type="text/javascript" src="../../pngfix.js"></script>
+<![endif]-->
+
+
+<div id="main">
+<CENTER>
+<H2>
+utils<br>
+gEDA/gaf's Utilities
+</H2>
+</CENTER>
+
+<H3>
+<A HREF="#whatis">What utilities are available?</A><BR>
+<A HREF="#download">Where can I download the utilities?</A><BR>
+</H3>
+
+<HR>
+
+<H4>
+<A NAME="whatis"></A>
+What utilities are available?
+</H4>
+
+<ul>
+<li><b>gschlas</b> -- This utility loads and saves out .sch and .sym files, updating the 
+version string in the file.  Written by Ales Hvezda</li>
+<br>
+<li><b>gxyrs</b> -- A perl program used to manipulate XYRS (pick-place) files.  
+It provides it provides some functions to allow easy manipulation of
+XYRS files, including rotation of components, string/number replacing,
+units change, offset XY coordinates, string replace by regular
+expression matching, and XYRS panelizing. Written by Carlos Nieves Onega.</li>
+<br>
+<li><b>garchive</b> -- A project archiver.  Written by Stuart Brorson.</li>
+<br>
+<li><b>convert_sym</b> -- convert_sym takes ViewLogic Viewdraw schematic or symbol and outputs
+a gschem compatible file.  This utility should be considered a work in
+progress.  Be warned, this program has quite a few limitations.  See the
+README file in the utils/ directory for more info.  This program is written
+in C.  There is also an awk version which is old and no longer supported,
+however it is included in the distribution as reference.  Written by Mike Jarabek.</li>
+<br>
+<li><b>gnet_hier_verilog</b> -- Shell script which generates a non-flattened hierarchical Verilog netlist.  Written by
+Paul Tan.</li>
+<br>
+<li><b>gpstoimage</b> -- A simple bourne shell script which shows how to take the postscript generated
+by gschem and convert it into an image (such as a gif or whatever).  Written Ales Hvezda.</li>
+<br>
+<li><b>gschupdate</b> -- Perl program which takes a schematic filename on the command line and outputs an
+updated schematic to stdout.  Written by Ales Hvezda.</li>
+<br>
+<li><b>gsymfix.pl</b> -- Perl program which reads a geda symbol file and 
+fixes the symbol so that it will pass gsymcheck with no errors or
+warnings.  Written by Mike Skerritt.</li>
+<br>
+<li><b>gsymupdate</b> -- Perl program which takes a symbol filename on the command line and outputs an
+updated symbol to stdout.  Written by Ales Hvezda.</li>
+<br>
+<li><b>pads_backannotate</b> -- Script is used to process PADS PowerPCB .eco files to backannotate
+changes to gEDA schematics.  Not all ECO file sections are implemented,
+and this program is relatively untested.  Written by Dan McMahill.</li>
+<br>
+<li><b>pcb_backannotate</b> -- Script is used to process annotation files from gEDA/PCB (http://pcb.sf.net) 
+to backannotate changes to gEDA schematics..  Written by Dan McMahill.</li>
+<br>
+<li><b>refdes_renum</b> -- A refdes numbering/renumbering utility.  Original version written by Dan McMahill.</li>
+<br>
+<li><b>sarlacc_sym</b> -- Sarlacc is an OrCAD to gEDA format schematic converter.  This software
+is beta, so it still has limitations.  Written by Matthew Ettus.</li>
+<br>
+<li><b>tragesym</b> -- Create gEDA symbols out of structured textfiles.  Written by Werner Hoch.</li>
+<br>
+<li><b>gmk_sym</b> -- gmk_sym is a simple utility to convert comma separated descriptions into
+rectangular gschem symbols.   Written by Jerry O'Keefe</li>
+<br>
+<li><b>grenum</b> -- A refdes number utility.  Written by Levente Kovacs.</li>
+<br>
+<li><b>gsch2pcb</b> -- A forward annotation utility, used to transform gschem .sch files into
+a format to be read by gEDA/PCB.  Originally written by Bill Wilson.</li>
+<br>
+<li><b>olib</b> -- Orcad to gEDA lib converter written as a .lex file for use with flex and bison.  Written by Mario Pascucci.</li>
+<br>
+<li><b>smash_megafile</b> -- smash_megafile is a C program that will take a ViewLogic megafile and
+extract the contents into a directory of the same name, with one file
+representing each element in the library.  Written by Mike Jarabek.</li>
+
+</ul>
+
+
+<H4>
+<A NAME="download"></A>
+Where can I download the utilities?
+</H4>
+
+<A HREF="../../download.html">gEDA's download page</A><br>
+</div>
+
+<div id="footer">
+<br>
+</div>
+
+</BODY>
+</HTML>
+
