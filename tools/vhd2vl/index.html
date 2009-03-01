@@ -1,0 +1,120 @@
+<HTML>
+
+<HEAD>
+<TITLE>vhd2vl</TITLE>
+<STYLE TYPE="text/css" MEDIA="all" TITLE="Default">
+@IMPORT URL(../../geda.css);
+</STYLE>
+
+<LINK rel="icon" href="../../favicon.ico" type="image/x-icon"> 
+<LINK rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+
+</HEAD>
+
+<BODY>
+
+<div id="nav">
+<div id="navavoid"></div>
+
+<ul>
+<li> <A HREF="../../index.html">Home</A> </li> <li> &middot; </li>
+<li> <A HREF="../../news/index.html">News</A> </li> <li> &middot; </li>
+<li> <A HREF="../../screenshots/index.html">Screenshots</A> </li> <li>&middot; </li>
+<li> <A HREF="../index.html"></A>Tools </li> <li> &middot; </li>
+<li> <A HREF="../../license.html">License</A> </li> <li> &middot; </li>
+<li> <A HREF="../../download.html">Download</A> <li> </li> 
+<br>
+<li> <A HREF="http://geda.seul.org/wiki">Documentation</A> </li> <li> &middot; </li>
+<li> <A HREF="../../mailinglists.html">Mailing Lists</A> </li> <li> &middot;
+<li> <A HREF="../../developer.html">Developer</A> </li> <li> &middot; </li>
+<li> <A HREF="../../search.html">Search</A> </li> <li> &middot; </li>
+<li> <A HREF="../../links.html">Links</A> </li>
+</ul>
+
+<div id="navundertext">
+<div id="navlogo">
+
+<A HREF="../../index.html">
+<img src="../../graphics/navlogo.png" height="73" width="266" alt="gEDA logo"/>
+</A>
+
+</div>
+
+<div id="navrule"></div>
+<h3>
+<A HREF="../index.html">Tools</A> &rarr; vhd2vl
+</h3>
+</div>
+
+</div>
+
+<!--[if lt IE 7.]>
+<script defer type="text/javascript" src="../../pngfix.js"></script>
+<![endif]-->
+
+<div id="main">
+
+<CENTER>
+<H2>
+vhd2vl<br>
+VHDL to Verilog translator
+</H2>
+</CENTER>
+
+<H3>
+<A HREF="#whatis">What is vhd2vl?</A><BR>
+<A HREF="#download">Where can I download it?</A><BR>
+</H3>
+<HR>
+
+
+<H4>
+<A NAME="whatis"></A>
+What is vhd2vl?
+</H4>
+<p>
+Vhd2vl is designed to translate synthesizable VHDL into Verilog 2001. It does
+not support the full VHDL grammar - most of the testbench-related features have
+been left out.
+</p>
+
+<p>
+While different synthesizers support slightly different templates and language
+subsets, the basic pattern of expressing logic within the language is pretty
+clear.  As of the 2.2 release, vhd2vl supports:
+<ul>
+<li>File organization using entity and architecture.</li>
+<li>Signal declaration: time, natural, positive, integer (synonyms), boolean,
+std_logic, std_ulogic (synonyms), signed, unsigned, std_logic_vector,
+std_ulogic_vector (synonyms), and enumerations ("type" keyword).</li>
+<li>Bit ranges (to, downto).</li>
+<li>Module instantiation (component declarations are parsed but ignored).</li>
+<li>Processes triggered on clock events or expressions.</li>
+<li>Control logic: if/elsif/else/end if, case, for.</li>
+<li>All arithmetic and boolean unary and binary operators.</li>
+<li>"After" clauses.</li>
+</ul>
+Syntax and semantics are not carefully checked. vhd2vl assumes that the input
+is error-free; it's not hard to write erroneous VHDL where the errors propagate
+to the Verilog.
+</p>
+
+<p>
+Vhd2vl is written using lex (actually Flex), yacc (actually Bison), and C. It
+should build and run in just about any POSIX-compatible environment. 
+</p>
+
+<H4>
+<A NAME="download"></A>
+Where can I download it?
+</H4>
+Larry Doolittle's <A HREF="http://doolittle.icarus.com/~larry/vhd2vl/">
+vhd2vl home on the web</A>.<br>
+</div>
+
+<div id="footer">
+<br>
+<p>
+
+</BODY>
+</HTML>
