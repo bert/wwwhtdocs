@@ -127,6 +127,11 @@ body {
     color: #FF0000;
 }
 
+table.iconbar {
+  border-collapse: collapse;
+  border: 1px solid #aaaaff;
+}
+
 
 #main {
     width: 90%;
