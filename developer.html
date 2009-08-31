@@ -161,23 +161,29 @@ To build the git repository version of gEDA/gaf, follow these instructions:
 
 <p>
 
-<UL>
-<LI> <A HREF="http://www.gnu.org/software/automake/">automake</A> 1.7.x or later </LI>
-<LI> <A HREF="http://www.gnu.org/software/autoconf/">autoconf</A> 2.57 or later</LI>
-<LI> <A HREF="http://www.gnu.org/software/libtool/">libtool</A> 1.4.x or later </LI>
-<LI> <A HREF="http://pkgconfig.freedesktop.org/wiki">pkg-config</A> >= 0.16.x</LI>
-<LI> <A HREF="http://www.gnu.org/software/gettext/">gettext</A> 0.12.1 or later</LI>
-<LI> <A HREF="http://www.gnu.org/software/guile">guile</A> 1.8.x (1.6.x is no longer supported)</LI>
-<LI> <A HREF="http://www.gtk.org/">gtk+</A> 2.10.x or later</LI>
-<LI> <A HREF="http://www.gnu.org/software/groff/groff.html">groff</A> current</LI>
-<LI> <A HREF="http://www.nongnu.org/cvs/">cvs</A> current </LI>
-<LI> <A HREF="http://flex.sourceforge.net/">flex</A> current </LI>
-</UL>
-<br>
-It is pretty important to have all of the above programs (especially
-automake, autoconf, libtool, gtk, and guile) installed in the same prefix
-(like /usr or /usr/local).  If you do not have them all installed in
-the same prefix, then building and installing gEDA/gaf is much harder.
+  <UL>
+    <LI> A C compiler and C standard library (<A HREF="http://gcc.gnu.org/">GCC</A> and <A HREF="http://www.gnu.org/software/libc/">GNU Libc</A> are recommended) </LI>
+    <LI> <A HREF="http://flex.sourceforge.net/">flex</A> current </LI>
+    <LI> <A HREF="http://www.gnu.org/software/gawk/">GNU awk</A> current </LI>
+    <LI> <A HREF="http://www.gnu.org/software/automake/">automake</A> 1.6.x or later </LI>
+    <LI> <A HREF="http://www.gnu.org/software/autoconf/">autoconf</A> 2.60 or later</LI>
+    <LI> <A HREF="http://www.gnu.org/software/libtool/">libtool</A> current  </LI>
+    <LI> <A HREF="http://pkgconfig.freedesktop.org/wiki">pkg-config</A> current </LI>
+    <LI> <A HREF="http://www.gnu.org/software/gettext/">gettext</A> 0.16 or later</LI>
+    <LI> <A HREF="http://www.gnu.org/software/guile">guile</A> 1.8.x (1.6.x is no longer supported)</LI>
+    <LI> <A HREF="http://www.gtk.org/">gtk+</A> 2.10.x or later</LI>
+    <LI> <A HREF="http://www.gnu.org/software/groff/groff.html">groff</A> current</LI>
+    <LI> <A HREF="http://git-scm.com/">git</A> 1.6.x or later </LI>
+    <LI> <A HREF="http://www.nongnu.org/cvs/">cvs</A> current </LI>
+    <LI> <A HREF="http://freedesktop.org/Software/shared-mime-info">freedesktop.org MIME info database</A> current </LI>
+    <LI> <A HREF="http://www.freedesktop.org/software/desktop-file-utils/releases"> freedesktop.org utilities for manipulating .desktop files</A> current </LI>
+  </UL>
+  <br>
+
+  It is pretty important to have all of the above programs (especially
+  automake, autoconf, libtool, gtk, and guile) installed in the same prefix
+  (like /usr or /usr/local).  If you do not have them all installed in
+  the same prefix, then building and installing gEDA/gaf is much harder.
 
   </LI>
 
@@ -214,7 +220,7 @@ README file which describes what is available.<br>
     </pre>
 
     It is recommended that you add PATH_WHERE_gEDA_GAF_IS_INSTALLED/bin to your PATH environment variable (typically done by modifying one of the following files: $HOME/.bashrc, $HOME/.bash_profile, or $HOME/.profile).
-
+    
     <p>
 
     It is highly recommended that you read the gEDA documentation at this point.  You can access the gEDA documentation by running gschem and select Help/gEDA Documentation... from the top menu.
@@ -222,28 +228,21 @@ README file which describes what is available.<br>
 
 <br>
 
-<LI> If you want to get gEDA/gaf repository commit log e-mail messages, please 
-     subscribe to the geda-cvs mailing list.  Please see the 
-     <A HREF="./mailinglists.html">mailing lists page</A> for info on
-     how to do this.
-</LI>
+  <LI> If you want to get gEDA/gaf repository commit log e-mail messages, please 
+    subscribe to the geda-cvs mailing list.  Please see the 
+    <A HREF="./mailinglists.html">mailing lists page</A> for info on
+    how to do this.
+  </LI>
 
 <br>
 
-<LI>
-For build problems, please be sure to read the 
-<A HREF="./mailinglists.html">mailing list archives</A> or 
-<A HREF="./search.html">search</A> this site.  Also look at the 
-<A HREF="http://geda.seul.org/wiki">gEDA wiki</A> for more hints.
-</LI>
+  <LI> For build problems, please be sure to read the 
+    <A HREF="./mailinglists.html">mailing list archives</A> or 
+    <A HREF="./search.html">search</A> this site.  Also look at the 
+    <A HREF="http://geda.seul.org/wiki">gEDA wiki</A> for more hints.
+  </LI>
 
 </UL>
-
-
-
-
-</UL>
-
 
 
 <p>
