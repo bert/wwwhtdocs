@@ -149,87 +149,102 @@ Please see the <A HREF="http://geda.seul.org/wiki/geda:scm">gEDA Source Control 
 <p>
 
 
-<strong>Build repository version of gEDA/gaf</strong>
+<strong>Build git repository version of gEDA/gaf</strong>
 <p>
 
-To build the repository version of gEDA/gaf, follow these instructions:
-<OL>
-<LI> You must have the following packages installed:
+To build the git repository version of gEDA/gaf, follow these instructions:
+
+<UL>
+  <LI> Download and install all the following dependencies.  You will
+    probably want to use your distributions package management system
+    (such as apt-get or yum) to install the dependencies.
+
 <p>
+
 <UL>
 <LI> <A HREF="http://www.gnu.org/software/automake/">automake</A> 1.7.x or later </LI>
 <LI> <A HREF="http://www.gnu.org/software/autoconf/">autoconf</A> 2.57 or later</LI>
 <LI> <A HREF="http://www.gnu.org/software/libtool/">libtool</A> 1.4.x or later </LI>
-<LI> <A HREF="http://pkgconfig.freedesktop.org/wiki">pkg-config</A> >= 0.15.x</LI>
+<LI> <A HREF="http://pkgconfig.freedesktop.org/wiki">pkg-config</A> >= 0.16.x</LI>
 <LI> <A HREF="http://www.gnu.org/software/gettext/">gettext</A> 0.12.1 or later</LI>
-<LI> <A HREF="http://www.gnu.org/software/guile">guile</A> 1.8.x (1.6.x should no longer be used and support will eventually be dropped)</LI>
-<LI> <A HREF="http://www.gtk.org/">gtk+</A> 2.4.x or later</LI>
+<LI> <A HREF="http://www.gnu.org/software/guile">guile</A> 1.8.x (1.6.x is no longer supported)</LI>
+<LI> <A HREF="http://www.gtk.org/">gtk+</A> 2.10.x or later</LI>
 <LI> <A HREF="http://www.gnu.org/software/groff/groff.html">groff</A> current</LI>
-<LI> <A HREF="http://ftp.gnome.org/pub/gnome/sources/intltool/">intltool</A> current</LI>
 <LI> <A HREF="http://www.nongnu.org/cvs/">cvs</A> current </LI>
 <LI> <A HREF="http://flex.sourceforge.net/">flex</A> current </LI>
 </UL>
-<p>
-You also can find the various required packages on the 
-<A HREF="./sources.html">sources web page</A>.  The best way to install
-these packages is, however, to install them using your distribution's
-package management mechanism (rpm, deb, portage, ports, etc...).
-
-<p>
-
+<br>
 It is pretty important to have all of the above programs (especially
 automake, autoconf, libtool, gtk, and guile) installed in the same prefix
 (like /usr or /usr/local).  If you do not have them all installed in
 the same prefix, then building and installing gEDA/gaf is much harder.
 
+  </LI>
 
-<p>
-<LI> Edit the toplevel Makefile to set the prefix to something other than
-the default $HOME/geda if you so desire.</LI>
+  <br>
 
-<p>
-<LI> Type: <tt>make</tt> which will output the required environment variables
-(PATH, LD_LIBRARY_PATH, and PKG_CONFIG_PATH) that must be set before the
-next step.  Set all required environment variables.  NOTE: running make
-with no parameters will not build anything, but rather it just outputs
-environment variables that must be set.  <b>Not setting these environment
-variables will pretty much guarantee that gEDA/gaf will not build at
-all.</b></LI>
+  <LI> 
+    Clone the source from the official git repository.  For information on how to do this, read the  <A HREF="http://geda.seul.org/wiki/geda:scm">gEDA SCM page</A>.
+  </LI>
 
-<p>
-<LI> And finally type: <tt> make install</tt> </LI>
+  <br>
 
-<p>
-<LI> After this make finishes with NO errors, you should have a working 
-gEDA/gaf repository build. </LI>
-<p>
-</OL>
-<p>
+  <LI>
+    Build the software by executing the following commands inside of the newly cloned git repository:
+
+    <pre>
+      ./autogen.sh
+      ./configure --prefix=$HOME/geda
+      make 
+      make install
+    </pre>
+
+    If the above commands execute without <b>any</b> error messages, then you have successfully built and installed gEDA/gaf.  If you encounter any errors, be sure to read the README and INSTALL files contained within the tarball.
+  </LI>
+
+  <br>
+
+  <LI>
+    You can now run the various programs in the gEDA suite.  Please read the 
+README file which describes what is available.<br>
+
+    gschem is the schematic capture program and can be run by executing: <br>
+    <pre>
+      PATH_WHERE_gEDA_GAF_IS_INSTALLED/bin/gschem
+    </pre>
+
+    It is recommended that you add PATH_WHERE_gEDA_GAF_IS_INSTALLED/bin to your PATH environment variable (typically done by modifying one of the following files: $HOME/.bashrc, $HOME/.bash_profile, or $HOME/.profile).
+
+    <p>
+
+    It is highly recommended that you read the gEDA documentation at this point.  You can access the gEDA documentation by running gschem and select Help/gEDA Documentation... from the top menu.
+  </LI> 
+
 <br>
-
-Misc hints:
-<p>
-
-<UL>
-
-<LI> Everytime you update the source tree, be sure to do a <tt>make maint</tt>
-     at the toplevel (or <tt>make maintainer-clean</tt> in each package
-     directory) before you try to build again.  </LI>
-<p>
 
 <LI> If you want to get gEDA/gaf repository commit log e-mail messages, please 
      subscribe to the geda-cvs mailing list.  Please see the 
      <A HREF="./mailinglists.html">mailing lists page</A> for info on
      how to do this.
-<p>
+</LI>
+
+<br>
 
 <LI>
 For build problems, please be sure to read the 
 <A HREF="./mailinglists.html">mailing list archives</A> or 
 <A HREF="./search.html">search</A> this site.  Also look at the 
-<A HREF="http://geda.seul.org/wiki">FAQ</A> for more hints.
+<A HREF="http://geda.seul.org/wiki">gEDA wiki</A> for more hints.
 </LI>
+
 </UL>
+
+
+
+
+</UL>
+
+
 
 <p>
 <hr>
