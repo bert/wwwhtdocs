@@ -136,6 +136,14 @@ table.iconbar {
   margin-right: 20px;
 }
 
+table.ffhp {
+  border-collapse: collapse;
+  border: 1px solid #aaaaff;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 #main {
     #width: 100%;
     margin: 1em 2em 1em 2em;
