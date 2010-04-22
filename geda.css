@@ -145,7 +145,7 @@ table.ffhp {
 }
 
 #main {
-    #width: 100%;
+    width: 95%;
     margin: 1em 2em 1em 2em;
     font-family: sans-serif;
 }

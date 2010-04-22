@@ -1,0 +1,37 @@
+
+Redirect 301 /developer.html http://www.gpleda.org/
+Redirect 301 /download.html http://www.gpleda.org/
+Redirect 301 /license.html http://www.gpleda.org/
+Redirect 301 /links.html http://www.gpleda.org/
+Redirect 301 /mailinglists.html http://www.gpleda.org/
+Redirect 301 /screenshots.html http://www.gpleda.org/
+Redirect 301 /sources.html http://www.gpleda.org/
+Redirect 301 /status.html http://www.gpleda.org/
+
+Redirect 301 /news/news2005.html http://www.gpleda.org/
+Redirect 301 /news/news2006.html http://www.gpleda.org/
+Redirect 301 /news/news2007.html http://www.gpleda.org/
+Redirect 301 /news/news2008.html http://www.gpleda.org/
+Redirect 301 /news/news2009.html http://www.gpleda.org/
+
+Redirect 301 /tools/docs/index.html http://www.gpleda.org/
+Redirect 301 /tools/examples/index.html http://www.gpleda.org/
+Redirect 301 /tools/gattrib/index.html http://www.gpleda.org/
+Redirect 301 /tools/gerbv/index.html http://www.gpleda.org/
+Redirect 301 /tools/gnetlist/index.html http://www.gpleda.org/
+Redirect 301 /tools/gnucap/index.html http://www.gpleda.org/
+Redirect 301 /tools/gschem/index.html http://www.gpleda.org/
+Redirect 301 /tools/gspiceui/index.html http://www.gpleda.org/
+Redirect 301 /tools/gsymcheck/index.html http://www.gpleda.org/
+Redirect 301 /tools/gtkwave/index.html http://www.gpleda.org/
+Redirect 301 /tools/gwave/index.html http://www.gpleda.org/
+Redirect 301 /tools/icarus/index.html http://www.gpleda.org/
+Redirect 301 /tools/ngspice/index.html http://www.gpleda.org/
+Redirect 301 /tools/pcb/index.html http://www.gpleda.org/
+Redirect 301 /tools/utils/index.html http://www.gpleda.org/
+Redirect 301 /tools/xgsch2pcb/index.html http://www.gpleda.org/
+Redirect 301 /tools/wcalc/index.html http://www.gpleda.org/
+Redirect 301 /tools/index.html http://www.gpleda.org/
+Redirect 301 /tools/symbols/index.html http://www.gpleda.org/
+
+
