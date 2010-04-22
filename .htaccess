@@ -1,11 +1,11 @@
 
-Redirect 301 /developer.html http://www.gpleda.org/
-Redirect 301 /download.html http://www.gpleda.org/
-Redirect 301 /license.html http://www.gpleda.org/
-Redirect 301 /links.html http://www.gpleda.org/
-Redirect 301 /mailinglists.html http://www.gpleda.org/
-Redirect 301 /screenshots.html http://www.gpleda.org/
-Redirect 301 /sources.html http://www.gpleda.org/
+Redirect 301 /developer.html http://geda.seul.org/wiki/geda:developer
+Redirect 301 /download.html http://geda.seul.org/wiki/geda:download
+Redirect 301 /license.html http://geda.seul.org/wiki/geda:license
+Redirect 301 /links.html http://geda.seul.org/wiki/geda:links
+Redirect 301 /mailinglists.html http://geda.seul.org/wiki/geda:mailinglists
+Redirect 301 /screenshots.html http://geda.seul.org/wiki/geda:screenshots
+Redirect 301 /sources.html http://geda.seul.org/wiki/geda:download
 Redirect 301 /status.html http://www.gpleda.org/
 
 Redirect 301 /news/news2005.html http://www.gpleda.org/
@@ -14,24 +14,24 @@ Redirect 301 /news/news2007.html http://www.gpleda.org/
 Redirect 301 /news/news2008.html http://www.gpleda.org/
 Redirect 301 /news/news2009.html http://www.gpleda.org/
 
-Redirect 301 /tools/docs/index.html http://www.gpleda.org/
-Redirect 301 /tools/examples/index.html http://www.gpleda.org/
-Redirect 301 /tools/gattrib/index.html http://www.gpleda.org/
-Redirect 301 /tools/gerbv/index.html http://www.gpleda.org/
-Redirect 301 /tools/gnetlist/index.html http://www.gpleda.org/
-Redirect 301 /tools/gnucap/index.html http://www.gpleda.org/
-Redirect 301 /tools/gschem/index.html http://www.gpleda.org/
-Redirect 301 /tools/gspiceui/index.html http://www.gpleda.org/
-Redirect 301 /tools/gsymcheck/index.html http://www.gpleda.org/
-Redirect 301 /tools/gtkwave/index.html http://www.gpleda.org/
-Redirect 301 /tools/gwave/index.html http://www.gpleda.org/
-Redirect 301 /tools/icarus/index.html http://www.gpleda.org/
-Redirect 301 /tools/ngspice/index.html http://www.gpleda.org/
-Redirect 301 /tools/pcb/index.html http://www.gpleda.org/
-Redirect 301 /tools/utils/index.html http://www.gpleda.org/
+Redirect 301 /tools/docs/index.html http://geda.seul.org/wiki/geda:gaf
+Redirect 301 /tools/examples/index.html http://geda.seul.org/wiki/geda:gaf
+Redirect 301 /tools/gattrib/index.html http://geda.seul.org/wiki/geda:gaf
+Redirect 301 /tools/gerbv/index.html http://gerbv.gpleda.org/
+Redirect 301 /tools/gnetlist/index.html http://geda.seul.org/wiki/geda:gaf
+Redirect 301 /tools/gnucap/index.html http://gnucap.org/dokuwiki/doku.php?id=gnucap:start
+Redirect 301 /tools/gschem/index.html http://geda.seul.org/wiki/geda:gaf
+Redirect 301 /tools/gspiceui/index.html http://sourceforge.net/projects/gspiceui/
+Redirect 301 /tools/gsymcheck/index.html http://geda.seul.org/wiki/geda:gaf
+Redirect 301 /tools/gtkwave/index.html http://gtkwave.sourceforge.net/
+Redirect 301 /tools/gwave/index.html http://gwave.sourceforge.net/
+Redirect 301 /tools/icarus/index.html http://www.icarus.com/eda/verilog/
+Redirect 301 /tools/ngspice/index.html http://ngspice.sourceforge.net/
+Redirect 301 /tools/pcb/index.html http://pcb.gpleda.org/
+Redirect 301 /tools/utils/index.html http://geda.seul.org/wiki/geda:gaf
 Redirect 301 /tools/xgsch2pcb/index.html http://www.gpleda.org/
 Redirect 301 /tools/wcalc/index.html http://www.gpleda.org/
 Redirect 301 /tools/index.html http://www.gpleda.org/
-Redirect 301 /tools/symbols/index.html http://www.gpleda.org/
+Redirect 301 /tools/symbols/index.html http://geda.seul.org/wiki/geda:gaf
 
 
