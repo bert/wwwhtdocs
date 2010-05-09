@@ -8,6 +8,7 @@ Redirect 301 /screenshots.html http://geda.seul.org/wiki/geda:screenshots
 Redirect 301 /sources.html http://geda.seul.org/wiki/geda:download
 Redirect 301 /status.html http://www.gpleda.org/
 
+Redirect 301 /news/index.html http://www.gpleda.org/
 Redirect 301 /news/news2005.html http://www.gpleda.org/
 Redirect 301 /news/news2006.html http://www.gpleda.org/
 Redirect 301 /news/news2007.html http://www.gpleda.org/
