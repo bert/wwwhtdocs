@@ -35,4 +35,4 @@ Redirect 301 /tools/wcalc/index.html http://www.geda-project.org/
 Redirect 301 /tools/index.html http://www.geda-project.org/
 Redirect 301 /tools/symbols/index.html http://wiki.geda-project.org/geda:gaf
 
-Redirect 301 /wiki http://wiki.geda-project.org/
+Redirect 301 /wiki http://wiki.geda-project.org
